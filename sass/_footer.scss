@@ -1,0 +1,23 @@
+.attribution {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #fff;
+
+  a {
+    &:link,
+    &:visited {
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+  
+  @include respond(tab-port) {
+    text-align: center;
+    padding: 0 4rem;
+  }
+
+  @include respond(phone) {   
+    padding: 0 2rem;
+    line-height: 1.5;
+  }
+}

@@ -27,4 +27,8 @@ body {
   background-size: contain;
   background-color: $color-primary;
   background-blend-mode: screen;
+
+  @include respond(tab-port) {
+    background-image: url(../images/bg-mobile.svg);
+  }
 }

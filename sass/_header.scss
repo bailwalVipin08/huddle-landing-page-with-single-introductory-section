@@ -1,4 +1,8 @@
 header {
   padding-top: 2rem;
   padding-left: 6rem;
+ 
+  @include respond(tab-port){
+    padding-left: 4rem;
+  }
 }

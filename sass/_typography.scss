@@ -2,11 +2,30 @@
   font-size: 4rem;
   font-family: $font-stack-1;
   margin-bottom: 2rem;
-//   font-weight: 700;
+
+  @include respond(tab-port) {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.4rem;
+    padding: 0;
+  }
+
 }
 
 .intro-text {
   font-size: 1.65rem;
   margin-bottom: 4rem;
   font-family: $font-stack-2;
+  line-height: 1.5;
+
+  @include respond(tab-port) {
+    text-align: center;
+  }
+  
+  @include respond(phone) {
+    font-size: 1.42rem;
+  }
 }
