@@ -25,14 +25,21 @@
     }
 
     .register-btn {
-      border: 0.15rem solid #fff;
-      border-radius: 10rem;
-      width: 20rem;
-      background-color: #fff;
-      box-shadow: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.35);
-      transition: all 0.1s ease-in;
-      cursor: pointer;
-      padding: 1.5rem 0;
+      &:link,
+      &:visited {
+        background-color: #fff;
+        border-radius: 10rem;
+        box-shadow: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.35);
+        color: $color-primary;
+        cursor: pointer;
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 1.35rem 0;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.1s ease-in;
+        width: 18rem;
+      }
 
       &:hover {
         transform: translateY(-0.2rem);
@@ -49,24 +56,16 @@
         box-shadow: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.35);
       }
 
-      a {
-        text-decoration: none;
-        border: none;
-        color: $color-primary;
-        font-size: 1.8rem;
-        font-weight: 600;
-        
-      }
       @include respond(phone) {
         width: 25rem;
       }
     }
   }
 
-   @include respond(tab-port) {
+  @include respond(tab-port) {
     flex-direction: column;
   }
-  
+
   @include respond(phone) {
     flex-direction: column;
     padding: 2rem;
